@@ -4,8 +4,17 @@ import './Menu.css';
 const Menu: React.FC = () => {
   const [active, setActive] = useState(false);
 
+  let touch = false;
+
   const toggleMenu = (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement> | React.MouseEvent<HTMLAnchorElement> | React.TouchEvent<HTMLAnchorElement>) => {
-    if (event.type === 'touchstart') event.preventDefault();
+    if (event.type === 'touchstart') {
+      touch = true;
+      event.preventDefault();
+    } else if (event.type === 'click' && touch) {
+      touch = false;
+      return;
+    }
+
     setActive(!active);
 
     const currentTarget = event.currentTarget as HTMLElement;
@@ -34,6 +43,7 @@ const Menu: React.FC = () => {
         id="btn-mobile"
         aria-expanded={active}
         aria-label={active ? 'Fechar menu' : 'Abrir menu'}
+        onClick={toggleMenu}
         onTouchStart={toggleMenu}
       >
         <div id="hamburger"></div>
