@@ -7,6 +7,7 @@
 }
 
 #box-titulo-img {
+     width: 80%;
      padding-top: 10%;
      display: flex;
      align-items: center;
