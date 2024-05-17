@@ -20,7 +20,7 @@ function Contate() {
                     <label>Email:<input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" /></label>
                     <label>Assunto:<input type="text" name="assunto" placeholder="Projeto" /></label>
                     <label>Mensagem:
-                         <textarea id="mensagem" rows="3" name="mensagem" required="" placeholder="Descreva o assunto"></textarea></label>
+                         <textarea id="mensagem" name="mensagem" placeholder="Descreva o assunto"></textarea></label>
                     <input id="enviar" type="submit" value="Enviar"></input>
                </form>
           </section>
