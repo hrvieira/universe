@@ -12,7 +12,7 @@ function Contate() {
                          <div>
                               <a href="https://www.linkedin.com/in/luizhrvieira/"><img src="/svg/linkedin.svg" alt="ícone linkedin" id="contate-icone" /></a>
                               <a href="https://github.com/hrvieira"><img src="/svg/github.svg" alt="ícone github" id="contate-icone" /></a>
-                              <img src="../../public/svg/instagram.svg" alt="ícone instagram" id="contate-icone" />
+                              <img src="/svg/instagram.svg" alt="ícone instagram" id="contate-icone" />
                          </div>
                     </div>
                </article>

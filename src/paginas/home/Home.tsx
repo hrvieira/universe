@@ -13,7 +13,7 @@ function Home() {
                          <p id="texto-bem-vindo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni quisquam</p>
                          <a id="bt-explorer" href="">Explore</a>
                     </article>
-                    <img id='capacete-astronalta' src='src\assets\img\svg\astronauta.svg' alt='capacete de astronalta'/>
+                    <img id='capacete-astronalta' src='/svg/astronauta.svg' alt='capacete de astronalta'/>
                </section>
                <section id="box-sobre">
                     <GithubProfile />
