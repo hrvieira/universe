@@ -34,7 +34,6 @@ const Menu: React.FC = () => {
         id="btn-mobile"
         aria-expanded={active}
         aria-label={active ? 'Fechar menu' : 'Abrir menu'}
-        onClick={toggleMenu}
         onTouchStart={toggleMenu}
       >
         <div id="hamburger"></div>
