@@ -1,13 +1,13 @@
 /* src/App.css ou src/components/Menu.module.css */
 #btn-mobile {
      display: none;
-     padding: 15px 0 15px 15px;
+     padding: 15px 7.5px;
      background-color: var(--roxo-claro);
      border: none;
      cursor: pointer;
-   }
+}
    
-   @media (max-width: 720px) {
+@media (max-width: 720px) {
      #btn-mobile {
        color: var(--branco);
        display: flex;
@@ -43,6 +43,11 @@
        margin: 0 1rem;
        border-bottom: 2px solid rgba(249, 249, 249, 0.3);
        color: var(--branco);
+       text-align: center;
+     }
+
+     #nav-header li a {
+        padding: .5rem 4rem;
      }
    
      #hamburger {
