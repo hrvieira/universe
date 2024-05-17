@@ -7,6 +7,13 @@ const Menu: React.FC = () => {
   const toggleMenu = (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement> | React.MouseEvent<HTMLAnchorElement> | React.TouchEvent<HTMLAnchorElement>) => {
     if (event.type === 'touchstart') event.preventDefault();
     setActive(!active);
+
+    const currentTarget = event.currentTarget as HTMLElement;
+    if (!active) {
+      currentTarget.setAttribute('aria-label', 'Fechar menu');
+    } else {
+      currentTarget.setAttribute('aria-label', 'Abrir menu');
+    }
   };
 
   const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement> | React.TouchEvent<HTMLAnchorElement>) => {
