@@ -1,0 +1,47 @@
+#main {
+     background-color: var(--cinza);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 100%;
+}
+
+#box-titulo-img {
+     width: 80%;
+     padding-top: 10%;
+     display: flex;
+     align-items: center;
+}
+
+#box-bem-vindo {
+     width: 55%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+
+#bem-vindo-titulo {
+     font-size: .9rem;
+     font-weight: bold;
+}
+
+#sub-titulo {
+     font-weight: bold;
+     font-size: 2rem;
+     width: 90%;
+     align-self: center;
+     padding: 4% 0;
+     line-height: 2.5rem;
+}
+
+#texto-bem-vindo {
+     width: 80%;
+     font-size: .85rem;
+     line-height: normal;
+     align-self: center;
+}
+
+#capacete-astronalta {
+     width: 40%;
+     max-width: 350px;
+}
