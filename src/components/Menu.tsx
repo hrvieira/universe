@@ -4,12 +4,12 @@ import './Menu.css';
 const Menu: React.FC = () => {
   const [active, setActive] = useState(false);
 
-  const toggleMenu = (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement> | React.MouseEvent<HTMLAnchorElement>) => {
+  const toggleMenu = (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement> | React.MouseEvent<HTMLAnchorElement> | React.TouchEvent<HTMLAnchorElement>) => {
     if (event.type === 'touchstart') event.preventDefault();
     setActive(!active);
   };
 
-  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement> | React.TouchEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     const targetId = event.currentTarget.getAttribute('href')!.substring(1);
     const targetElement = document.getElementById(targetId);
@@ -33,9 +33,9 @@ const Menu: React.FC = () => {
         <div id="hamburger"></div>
       </button>
       <ul id="nav-header">
-        <li><a href="#main" onClick={handleLinkClick}>Home</a></li>
-        <li><a href="#box-sobre" onClick={handleLinkClick}>Sobre</a></li>
-        <li><a href="#main-contate" onClick={handleLinkClick}>Contate Me</a></li>
+        <li><a href="#main" onClick={handleLinkClick} onTouchStart={handleLinkClick}>Home</a></li>
+        <li><a href="#box-sobre" onClick={handleLinkClick} onTouchStart={handleLinkClick}>Sobre</a></li>
+        <li><a href="#main-contate" onClick={handleLinkClick} onTouchStart={handleLinkClick}>Contate Me</a></li>
       </ul>
     </nav>
   );
