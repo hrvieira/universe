@@ -1,4 +1,5 @@
 import './../paginas/home/Home.css'
+// import '../../public/svg/instagram.svg'
 
 function Contate() {
   return (
@@ -9,9 +10,9 @@ function Contate() {
                     <p id="texto-contate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique esse fuga necessitatibus, iusto alias eius perferendis qui iste minima blanditiis repellendus distinctio dolor obcaecati aliquid quod quidem incidunt quibusdam!</p>
                     <div id="box-icone-contate">
                          <div>
-                              <a href="https://www.linkedin.com/in/luizhrvieira/"><img src="src\assets\img\svg\linkedin.svg" alt="ícone linkedin" id="contate-icone" /></a>
-                              <a href="https://github.com/hrvieira"><img src="src\assets\img\svg\github.svg" alt="ícone github" id="contate-icone" /></a>
-                              <img src="src\assets\img\svg\instagram.svg" alt="ícone instagram" id="contate-icone" />
+                              <a href="https://www.linkedin.com/in/luizhrvieira/"><img src="/svg/linkedin.svg" alt="ícone linkedin" id="contate-icone" /></a>
+                              <a href="https://github.com/hrvieira"><img src="/svg/github.svg" alt="ícone github" id="contate-icone" /></a>
+                              <img src="../../public/svg/instagram.svg" alt="ícone instagram" id="contate-icone" />
                          </div>
                     </div>
                </article>

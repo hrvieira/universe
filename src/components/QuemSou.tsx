@@ -1,4 +1,3 @@
-// src/components/GithubProfile.tsx
 import React, { useEffect, useState } from 'react';
 import './../paginas/home/Home.css'
 
@@ -28,7 +27,7 @@ const GithubProfile: React.FC = () => {
   }, []);
 
   return (
-     <div id="box-sobre">
+     <>
        {profile && (
          <>
            <img src={profile.avatar_url} alt={`Foto do perfil do GitHub - ${profile.name}`} id="busto" />
@@ -47,7 +46,7 @@ const GithubProfile: React.FC = () => {
            </article>
          </>
        )}
-     </div>
+     </>
    );
 };
 

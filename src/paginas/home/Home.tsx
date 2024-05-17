@@ -15,7 +15,9 @@ function Home() {
                     </article>
                     <img id='capacete-astronalta' src='src\assets\img\svg\astronauta.svg' alt='capacete de astronalta'/>
                </section>
-               <GithubProfile />
+               <section id="box-sobre">
+                    <GithubProfile />
+               </section>
                <Contate />
           </main>
    
