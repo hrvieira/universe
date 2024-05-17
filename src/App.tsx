@@ -1,14 +1,18 @@
-import './App.css'
-import Header from './paginas/header/Header'
-import Home from './paginas/home/Home'
+import './App.css';
+import Footer from './paginas/footer/Footer';
+import Header from './paginas/header/Header';
+import Home from './paginas/home/Home';
 
 function App() {
   return (
     <>
-     <Header />
-     <Home />
+      <Header />
+      <Home />
+      <Footer />
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
