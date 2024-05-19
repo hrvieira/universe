@@ -54,7 +54,7 @@ header{
        display: block;
        position: absolute;
        width: 100%;
-       top: 70px;
+       top: 61px;
        right: 0;
        background: var(--roxo-claro);
        height: 0;
@@ -64,8 +64,8 @@ header{
        overflow-y: hidden;
      }
    
-     #nav.active #nav-header {
-       height: calc(100vh - 70px);
+     #nav.aberto #nav-header {
+       height: 100%;
        visibility: visible;
        overflow-y: auto;
      }
@@ -99,15 +99,15 @@ header{
        position: relative;
      }
    
-     #nav.active #hamburger {
+     #nav.aberto #hamburger {
        border-top-color: transparent;
      }
    
-     #nav.active #hamburger::before {
+     #nav.aberto #hamburger::before {
        transform: rotate(135deg);
      }
    
-     #nav.active #hamburger::after {
+     #nav.aberto #hamburger::after {
        transform: rotate(-135deg);
        top: -7px;
      }

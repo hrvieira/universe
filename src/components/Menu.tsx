@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
-const Menu: React.FC = () => {
+interface MenuProps {
+  links: { titulo: string, href: string }[];
+}
+
+const Menu: React.FC<MenuProps> = ({ links }) => {
   const [active, setActive] = useState(false);
 
   const toggleMenu = (event: React.MouseEvent<HTMLButtonElement> | React.MouseEvent<HTMLAnchorElement>) => {
@@ -28,7 +32,7 @@ const Menu: React.FC = () => {
   };
 
   return (
-    <nav id="nav" className={active ? 'active' : ''}>
+    <nav id="nav" className={active ? 'aberto' : 'fechado'}>
       <button
         id="btn-mobile"
         aria-expanded={active}
@@ -38,9 +42,13 @@ const Menu: React.FC = () => {
         <div id="hamburger"></div>
       </button>
       <ul id="nav-header">
-        <li><a href="#main" onClick={handleLinkClick}>Home</a></li>
-        <li><a href="#box-sobre" onClick={handleLinkClick}>Sobre</a></li>
-        <li><a href="#main-contate" onClick={handleLinkClick}>Contate Me</a></li>
+        {links.map((link, index) => (
+            <li key={index}>
+              <a href={link.href} onClick={handleLinkClick}>
+                {link.titulo}
+              </a>
+            </li>
+          ))}
       </ul>
     </nav>
   );
