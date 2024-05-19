@@ -6,9 +6,7 @@ const Header: React.FC = () => {
      const links = [
           { titulo: 'Home', href: '#main' },
           { titulo: 'Sobre', href: '#box-sobre' },
-          { titulo: 'Contate Me', href: '#main-contate' },
-          { titulo: 'Formulário', href: '#form-contate'},
-          { titulo: 'Copyright', href: '#box-footer'}
+          { titulo: 'Contate Me', href: '#main-contate' }
      ];
 
      return (
